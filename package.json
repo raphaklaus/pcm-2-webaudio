@@ -1,0 +1,22 @@
+{
+  "name": "pcm-2-webaudio",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/raphaklaus/pcm-2-webaudio.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/raphaklaus/pcm-2-webaudio/issues"
+  },
+  "homepage": "https://github.com/raphaklaus/pcm-2-webaudio#readme",
+  "devDependencies": {
+    "mocha": "^4.0.1"
+  }
+}
