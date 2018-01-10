@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "./node_modules/.bin/babel src -d dist; ./node_modules/.bin/browserify dist/parser.js -o dist/bundle.js"
   },
   "repository": {
     "type": "git",
@@ -17,6 +18,14 @@
   },
   "homepage": "https://github.com/raphaklaus/pcm-2-webaudio#readme",
   "devDependencies": {
+    "@babel/cli": "^7.0.0-beta.37",
+    "@babel/core": "^7.0.0-beta.37",
+    "@babel/plugin-proposal-pipeline-operator": "^7.0.0-beta.37",
+    "@babel/preset-env": "^7.0.0-beta.37",
+    "babel-eslint": "^8.2.1",
+    "babel-preset-env": "^1.6.1",
+    "babelify": "^8.0.0",
+    "browserify": "^15.0.0",
     "mocha": "^4.0.1"
   }
 }
