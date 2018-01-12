@@ -1,5 +1,14 @@
+function getAudioContext() {
+  if (!getAudioContext.instance) {
+    getAudioContext.instance = new (window.AudioContext || window.webkitAudioContext)();
+  }
+
+  return getAudioContext.instance;
+}
+
+
 export const play = (sound) => {
-  var audio = new (window.AudioContext || window.webkitAudioContext)();
+  var audio = getAudioContext();
 
   let data = audio.createBuffer(2, sound.dataLength / 2 * 8 / sound.bitsPerSample, sound.sampleRate);
 
